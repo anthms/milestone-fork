@@ -1,0 +1,9 @@
+on:
+  pull_request_target:
+    types: [ milestoned, demilestoned ]
+
+jobs:
+  job-name:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'done'
